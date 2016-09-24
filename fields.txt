@@ -1,0 +1,27 @@
+ 0  Backer Number
+ 1  Backer UID
+ 2  Backer Name
+ 3  Email
+ 4  Shipping Country
+ 5  Shipping Amount
+ 6  Reward Title
+ 7  Reward Minimum
+ 8  Reward ID
+ 9  Pledge Amount
+10  Pledged At
+11  Rewards Sent?
+12  Pledged Status
+13  Notes
+14  Survey Response
+15  Shipping Name
+16  Shipping Address 1
+17  Shipping Address 2
+18  Shipping City
+19  Shipping State
+20  Shipping Postal Code
+21  Shipping Country Name
+22  Shipping Country Code
+23  Phone Number
+24  E Mail
+
+
