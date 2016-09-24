@@ -94,14 +94,15 @@ while (my $row = $csv->getline($csvfh)) {
     elsif ($all =~ /[\x{80}-\x{FF}]/) {
         $specialchars = 1;
     }
-    else {
-        $specialchars = 0;
-    }
 
     print "Ref #:   ", $refnum, ",  ";
     print "Backer:  ", $row->[2], "\n";
 
     my $doc = XML::LibXML::Document->new("1.0", "UTF-8");
+
+    # TODO I'm fairly certain this XML generation code could be cleaned up further
+    # with some gratuitous use of method chaining and fewer variables but I'm not going
+    # to even attempt it since I don't have a way to test the output properly. --rvoots
 
     my $OpenShipments = $doc->createElement("OpenShipments");
     $doc->setDocumentElement($OpenShipments);
@@ -233,6 +234,4 @@ while (my $row = $csv->getline($csvfh)) {
         $filename .= "_long";
     }
     $doc->toFile($filename . ".xml", 2);
-    #print $doc->toString(2);
-    #exit;
 }
