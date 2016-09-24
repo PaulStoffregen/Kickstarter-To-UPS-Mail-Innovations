@@ -1,0 +1,7 @@
+*.csv
+*.xml
+*.zip
+Completed*/
+old/
+testcases.txt
+allrefnums.*
