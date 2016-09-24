@@ -27,7 +27,7 @@ my $total    = 0;
 while (my $line = <$txtfh>) {
     #print "Item: $_\n";
 
-    my ($qty, $name, $price) = split ' ', $line;
+    my ($qty, $name, $price) = split(' ', $line);
     push @items, { qty => $qty, name => $name, price => $price };
     $total += $price * $qty;
     $numitems++;
